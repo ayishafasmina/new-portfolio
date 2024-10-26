@@ -1,0 +1,292 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+
+  
+} 
+.header{
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right,  rgb(35, 34, 34) 70%, rgb(222, 219, 30) 30%); 
+}
+
+.navbar{
+    padding: 10px;
+    margin-left: 800px;
+    
+
+
+
+}
+.navbar>a{
+    margin-right: 40px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: font-size 1s;
+}
+.navbar>a:hover{
+    font-size: 45px;
+    /* color:rgb(222, 219, 30) ; */
+} 
+
+#home{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: linear-gradient(to right,  rgb(35, 34, 34) 70%, rgb(222, 219, 30) 30%); 
+}
+.disc{
+    padding: 50px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+    
+}
+.disc>h1{
+    color: rgb(222, 219, 30);
+    font-size: 40px;
+    font-weight:500;
+}
+.disc>h4,h3{
+    color: white;
+    font-weight:400;
+    
+}
+#about{
+    padding: 30px;
+    background-color: rgb(40, 42, 42);
+    height: 530px;
+    color: white;
+}
+
+
+.abtcontainer{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#abtimg{
+    width: 300px;
+    height: 300px;
+    margin-left: 250px;
+    margin-top: 80px;
+}
+.aboutinfo{
+    padding-left: 20px;
+    margin-right: 250px;
+    line-height: 1.6;
+    margin-top: 30px;
+
+}
+.aboutinfo>p{
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+
+}
+.aboutinfo>h1{
+    font-weight: 500;
+    display: inline-block; 
+    border-bottom: 2px solid rgb(222, 219, 30); 
+    padding-bottom: 5px
+}
+.aboutinfo>a{
+    background-color: rgb(222, 219, 30);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: fit-content;
+ 
+}
+/* .skill{
+  
+    background-color: rgb(40, 42, 42);
+    color: white;
+    /* text-align: center; */
+    /* height: 300px; */
+    /* padding: 10px; */
+    /* padding-left: 350px; */
+    
+/* } */
+/* .skill>h1{ */
+    /* font-weight: 700; */
+    /* display: inline-block;  */
+    /* border-bottom: 2px solid rgb(222, 219, 30);  */
+    /* padding-bottom: 2px; */
+    
+/* } */
+/* .py{ */
+    /* margin-top: 10px; */
+/* }  */
+
+#skills {
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+    background-color: rgb(40, 42, 42);
+    color: white;
+    font-weight: 500;
+    padding-bottom: 5px
+    
+
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(40, 42, 42);
+    padding: 10px;
+    gap: 60px;
+   
+  
+   
+}
+#head {
+    color: white;
+    font-weight: 400;
+
+}
+.grid-item {
+    background-color: rgb(222, 219, 30);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 300px;
+    justify-content: center;
+    align-content: space-between;
+    border-color: white;
+    border-radius: 10%;
+}
+#listess{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+.contact{
+    text-align: center;
+    background-color: rgb(35, 34, 34) ;
+
+    height: 500px;
+    color: white;
+    align-items: center; 
+    justify-content: center;
+     display: flex; 
+
+}
+#cont{
+    font-weight: 700;
+    font-size: 25px;
+    display: inline-block; 
+    border-bottom: 2px solid rgb(222, 219, 30); 
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+
+
+}
+
+ .footer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(35, 34, 34);
+  
+
+}
+
+.navlinks{
+    padding: 40px;
+    margin-left: 400px;
+
+
+}
+.navlinks>a{
+    margin-right: 40px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: font-size 1s;
+}
+.navlinks>a:hover{
+    font-size: 45px;
+    color:rgb(222, 219, 30) ;
+} 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+@media (max-width: 800px) {
+    .navbar {
+        margin-left: 0; /* Center the navbar items */
+    }
+
+    .navbar > a {
+        font-size: 24px;
+        margin-right: 20px;
+    }
+
+    .abtcontainer {
+        grid-template-columns: 1fr; /* Stack the About Me image and text */
+        text-align: center;
+    }
+
+    #abtimg {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto; /* Center the image */
+    }
+
+    .aboutinfo {
+        margin: 20px;
+        padding-left: 0;
+        margin-right: 0;
+    }
+   
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Make skill items stack vertically */
+        gap: 20px;
+    }
+   
+
+    .grid-item {
+        font-size: 20px;
+        padding: 10px;
+        height: auto; /* Let items adjust in height */
+    }
+
+    .contact h3 {
+        font-size: 18px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navlinks {
+        margin: 20px 0;
+    }
+}
+
+
